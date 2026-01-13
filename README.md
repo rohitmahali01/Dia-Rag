@@ -166,3 +166,80 @@ If you use or build upon this work, please cite:
   author = {Mahali, Rohit},
   year   = {2026}
 }
+```
+
+## Related Work and Citations
+
+Dia-RAG builds upon and extends prior research in multilingual retrieval,
+dialectal NLP, and hallucination mitigation in Retrieval-Augmented Generation.
+Below, we summarize the most relevant prior work that informs this framework.
+
+### Lexical Diversity-Aware Retrieval
+Zhang et al. introduce **DRAG**, a lexical diversity-aware relevance assessment
+framework that decomposes queries into components with varying stability.
+While effective for high-resource, monolingual settings, DRAG does not address
+dialect–standard language mismatch. Dia-RAG adapts the decoupling principle to
+explicitly handle dialectal variation.
+
+> Zhang, Z., et al. (2025). *Lexical Diversity-aware Relevance Assessment for
+Retrieval-Augmented Generation*. ACL.
+
+---
+
+### Quality-Aware Translation and Hallucination Mitigation
+Moon et al. propose **QTT-RAG**, demonstrating that query rewriting and
+translation can introduce factual distortion in multilingual RAG systems.
+Their work motivates Dia-RAG’s non-destructive **quality-aware tagging**
+strategy, which preserves original content while exposing reliability metadata
+to the generator.
+
+> Moon, H., et al. (2025). *Quality-Aware Translation Tagging in Multilingual
+RAG Systems*. arXiv preprint.
+
+---
+
+### Dialectal Reasoning and Lexical Disambiguation
+The **DIALECT-COPA** shared task shows that dialect-specific lexicons
+significantly improve reasoning performance by resolving polysemous terms
+(e.g., “bug” vs. “treasure”). However, prior approaches rely on prompt-level
+augmentation rather than architectural integration. Dia-RAG embeds lexical
+lookup directly into the retrieval pipeline.
+
+> Perak, B., et al. (2024). *Incorporating Dialect Understanding into LLMs using
+RAG*. VarDial Workshop.
+
+---
+
+### Cultural and Geopolitical Bias in Multilingual Retrieval
+Li et al. introduce **BORDIRLINES**, demonstrating that retrieval language
+strongly influences model outputs in culturally sensitive tasks. Their findings
+highlight the risk of hegemonic bias when relying solely on standard-language
+corpora, motivating Dia-RAG’s focus on dialectal cultural fidelity.
+
+> Li, B., et al. (2025). *Multilingual Retrieval-Augmented Generation for
+Culturally-Sensitive Tasks*. ACL Findings.
+
+---
+
+### Surveys on Dialectal NLP
+Joshi et al. provide a comprehensive survey showing persistent performance gaps
+for dialectal and low-resource languages, emphasizing that reasoning capability
+alone is insufficient without explicit lexical knowledge. Dia-RAG operationalizes
+this insight through dictionary-augmented retrieval.
+
+> Joshi, A., et al. (2024). *Natural Language Processing for Dialects of a
+Language: A Survey*. ACM.
+
+---
+
+### Positioning of Dia-RAG
+Unlike prior work that relies on translation, rewriting, or prompt-level hints,
+Dia-RAG is the first framework to unify:
+
+- Dialect-aware query decoupling  
+- Dictionary-augmented retrieval  
+- Quality-tagged, non-destructive generation  
+
+This integration enables retrieval and generation that preserve dialectal
+meaning throughout the RAG pipeline.
+
