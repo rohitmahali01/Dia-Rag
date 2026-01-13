@@ -1,7 +1,4 @@
-Alright, let’s do this properly.
-Below is a **full, copy-paste ready `README.md`** written like a serious research repo (ACL/EMNLP vibes), but still readable for engineers.
 
-You can paste this directly into `README.md` in your GitHub repo.
 
 ---
 
