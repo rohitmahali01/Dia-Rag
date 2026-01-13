@@ -10,6 +10,7 @@ and amplifies **bias**—especially for dialectal and indigenous languages.
 
 Dia-RAG proposes a principled alternative: **decouple and augment**, rather than
 translate and rewrite.
+<img width="926" height="529" alt="image" src="https://github.com/user-attachments/assets/21e5c7c3-2d3f-4fea-9bf4-1541a167fdeb" />
 
 ---
 
@@ -44,8 +45,6 @@ Dia-RAG explicitly models this distinction.
 ---
 
 ## 🧠 Dia-RAG Architecture
-
-<img width="926" height="529" alt="image" src="https://github.com/user-attachments/assets/21e5c7c3-2d3f-4fea-9bf4-1541a167fdeb" />
 
 Dia-RAG consists of three core modules:
 
