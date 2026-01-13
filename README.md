@@ -168,7 +168,7 @@ If you use or build upon this work, please cite:
 }
 ```
 
-## Related Work and Citations
+## 10. Related Work and Citations
 
 Dia-RAG builds upon and extends prior research in multilingual retrieval,
 dialectal NLP, and hallucination mitigation in Retrieval-Augmented Generation.
