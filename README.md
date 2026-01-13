@@ -8,7 +8,8 @@ queries into high-resource languages (e.g., English or Hindi). While effective f
 fluency, this process often **erases cultural meaning**, introduces **factual distortion**,
 and amplifies **bias**—especially for dialectal and indigenous languages.
 
-The full research proposal detailing the problem formulation, architecture, and evaluation plan is provided in [`docs/proposal/Dia-RAG-Proposal.pdf`](docs/proposal/Dia-RAG-Proposal.pdf).
+The full research proposal detailing the problem formulation, architecture, and evaluation plan is provided in (`docs
+/Dia-RAG-Proposal-v1.pdf/Dia-RAG-Proposal.pdf`).
 
 Dia-RAG proposes a principled alternative: **decouple and augment**, rather than
 translate and rewrite.
