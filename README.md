@@ -91,5 +91,75 @@ Quality-Aware Tagging
 Generator LLM (Risk-Guided)
    ↓
 Culturally Accurate Answer
+```
+
+
+## 5. Dataset: Santali-CultureQA
+
+To evaluate dialect-aware retrieval and generation, we introduce
+**Santali-CultureQA**, a curated benchmark focusing on culturally grounded
+question answering in Santali (ISO 639-3: `sat`).
+
+**Dataset characteristics:**
+
+- 500 question–answer pairs
+- Coverage of festivals, governance structures, and literature
+- Each query contains at least one dialectal variant term
+- Annotations verified by native speakers
+
+The dataset is designed to test **cultural disambiguation** rather than
+surface-level semantic similarity.
 
 ---
+
+## 6. Experimental Baselines
+
+Dia-RAG is evaluated against the following baselines:
+
+### Direct mRAG
+- Multilingual embeddings without standardization
+
+### Translate-RAG
+- Query translation followed by standard retrieval and back-translation
+
+### Dia-RAG (Proposed)
+- Diversity-sensitive decoupling
+- Dictionary-augmented retrieval
+- Quality-aware generation
+
+---
+
+## 7. Evaluation Metrics
+
+### Retrieval Quality
+- **Recall@k**
+- **Variant Retrieval Rate**
+
+### Generation Quality
+- **Multilingual BERTScore**
+- **Cultural Specificity Score (CSS)**  
+  A reference-free metric assessing dialectal correctness
+
+---
+
+## 8. Project Status
+
+- Research proposal finalized
+- Dataset construction in progress
+- Implementation under development
+
+This repository is intended to serve as a **reproducible research artifact**
+and a **reference implementation**.
+
+---
+
+## 9. Citation
+
+If you use or build upon this work, please cite:
+
+```bibtex
+@misc{mahali2026diarag,
+  title  = {Dia-RAG: Dialect-Aware Retrieval for Low-Resource Dialects},
+  author = {Mahali, Rohit},
+  year   = {2026}
+}
