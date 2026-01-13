@@ -92,3 +92,22 @@ Quality-Aware Tagging
 Generator LLM (Risk-Guided)
    ↓
 Culturally Accurate Answer
+
+### 5. Dataset: Santali-CultureQA
+
+To evaluate dialect-aware retrieval and generation, we introduce
+Santali-CultureQA, a curated benchmark focusing on culturally grounded
+question answering in Santali (ISO 639-3: sat).
+
+Dataset characteristics:
+
+500 question–answer pairs
+
+Coverage of festivals, governance structures, and literature
+
+Each query contains at least one dialectal variant term
+
+Annotations verified by native speakers
+
+The dataset is designed to test cultural disambiguation rather than surface-level
+semantic similarity
